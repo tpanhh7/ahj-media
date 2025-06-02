@@ -30,7 +30,8 @@ export default class App {
         this.addPostToTimeline(this.lastPostText, coords);
         this.closeModal();
       } catch (error) {
-        this.showError("Invalid coordinates format. Please try again.");
+        this.showError(error.message);
+        this.modalInput.focus();
       }
     });
   }
@@ -39,7 +40,7 @@ export default class App {
     const errorElement = document.createElement("div");
     errorElement.className = "error-message";
     errorElement.textContent = message;
-    document.body.appendChild(errorElement);
+    document.body.append(errorElement);
     setTimeout(() => {
       errorElement.remove();
     }, 3000);
