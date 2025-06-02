@@ -46,7 +46,7 @@ jobs:
           npm test
 
   build:
-    needs: [eslint, test]
+    needs: [lint, test]
     runs-on: ubuntu-latest
     environment:
       name: github-pages
