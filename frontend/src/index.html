@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Timeline</title>
+</head>
+<body>
+<div id="root">
+	<h1>Timeline</h1>
+	<div id="timeline" class="timeline"></div>
+	<div class="input-area">
+		<input type="text" id="post-input" placeholder="Write your post and press Enter...">
+	</div>
+
+	<div id="modal" class="modal">
+		<div class="modal-content">
+			<h3>Location Required</h3>
+			<p>Please enter your coordinates manually:</p>
+			<input type="text" id="modal-input" placeholder="e.g. 51.50851, -0.12572">
+			<div class="modal-buttons">
+				<button id="modal-cancel">Cancel</button>
+				<button id="modal-ok">OK</button>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
